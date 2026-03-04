@@ -16,9 +16,6 @@ function getDaysInMonth(year, month) {
   return new Date(year, month + 1, 0).getDate();
 }
 
-function getFirstDay(year, month) {
-  return new Date(year, month, 1).getDay();
-}
 
 function getDates(year, month) {
   const total = getDaysInMonth(year, month);
@@ -52,7 +49,7 @@ export default function App() {
   });
   const [open, setOpen]   = useState(null);
   const [view, setView]   = useState("calendar");
-  const CORRECT_PIN = "2603";
+  const CORRECT_PIN = "0703";
   const [unlocked, setUnlocked] = useState(false);
   const [pin, setPin]     = useState("");
   const [pinError, setPinError] = useState(false);
